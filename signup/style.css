@@ -1,0 +1,24 @@
+div {
+	box-sizing: border-box;
+	width: 100%;
+	border: 100px solid black;
+	float: left;
+	align-content: center;
+	align-items: center;
+}
+
+form {
+	margin: 0 auto;
+	width: 600px;
+}
+input{
+    padding: 6px 10px;
+}
+#err_name, #err_email, #err_pass, #err_tel{
+    visibility: hidden;
+    color: red;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
