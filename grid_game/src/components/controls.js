@@ -1,7 +1,43 @@
 // Controls.js
 import React from "react";
+import useKeyPress from "./keyboard.js"
+import { useEffect, useState } from "react";
 
 const Controls = ({ up, down, left, right, action }) => {
+  const arrowUpPressed = useKeyPress('ArrowUp');
+  const arrowDownPressed = useKeyPress('ArrowDown');
+  const arrowLeftPressed = useKeyPress('ArrowLeft');
+  const arrowRightPressed = useKeyPress('ArrowRight');
+
+
+  useEffect(() => {
+    if (arrowUpPressed) {
+      up()
+      console.log('arrowUpPressed');
+    }
+  }, [arrowUpPressed]);
+
+  useEffect(() => {
+    if (arrowDownPressed) {
+      down()
+      console.log('arrowDownPressed');
+    }
+  }, [arrowDownPressed]);
+  useEffect(() => {
+    if (arrowLeftPressed) {
+      left()
+      console.log('arrowLeftPressed');
+    }
+  }, [arrowLeftPressed]);
+
+  useEffect(() => {
+    if (arrowRightPressed) {
+      right()
+      console.log('arrowRightPressed');
+    }
+  }, [arrowRightPressed]);
+
+
   return (
     <div className="controls">
       <div className="iner">

@@ -59,7 +59,7 @@ function GridGame() {
             className="mover"
             style={{
               backgroundColor:
-                item === state ? "red" : "white" && item === block ? "black" : "white" && state === block ? "black" : "white",
+                item == state ? "red" : "white" && item == block ? "black" : "white" && state == block ? "black" : "white",
             }}
           ></div>
         </div>
