@@ -29,12 +29,12 @@ function Counter() {
         setNum(val=>val-1);
     }
     return (
-      <div className='container'>
-        <h1>inside counter</h1>
+      <div className='container css'>
+        <h1> counter</h1>
         <ButtonGroup aria-label="Basic example">
-      <Button variant="primary" onClick={decre}>-</Button>
+      <Button variant="primary" onClick={decre}>decrement</Button>
         <h1>{num}</h1>
-      <Button variant="primary" onClick={increm}>+</Button>
+      <Button variant="primary" onClick={increm}>increment</Button>
     </ButtonGroup>
 
 
